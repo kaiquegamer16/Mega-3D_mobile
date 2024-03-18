@@ -1,0 +1,146 @@
+/* styles.css */
+body {
+    font-family: Monospace;
+    font-weight: bold;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.panel-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.panel-options,
+.panel-properties,
+.panel-skybox,
+.panel-import,
+.panel-objects {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    border-radius: 5px;
+    overflow-y: auto; /* Adiciona rolagem vertical */
+    max-height: calc(100vh - 100px); /* Limita a altura do painel para caber na janela */
+}
+
+.panel-options {
+    left: 10px;
+}
+
+.panel-properties {
+    right: 10px;
+}
+
+.panel-skybox {
+    left: 10px;
+}
+
+.panel-skybox input[type="file"],
+.panel-skybox input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+.panel-import {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.panel-objects {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+.panel-objects div {
+    color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.panel-objects div:hover {
+    text-decoration: underline;
+}
+
+.panel-options button,
+.panel-skybox button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.panel-properties label,
+.panel-skybox label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.panel-properties input,
+.panel-skybox input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.panel-skybox select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Outros estilos existentes... */
+
+.panel-transform {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    border-radius: 5px;
+    overflow-y: auto; /* Adiciona rolagem vertical */
+    max-height: calc(100vh - 100px); /* Limita a altura do painel para caber na janela */
+}
+
+.panel-transform label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.panel-transform input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.panel-transform button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
